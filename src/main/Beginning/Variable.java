@@ -6,8 +6,9 @@ import java.util.LinkedList;
 
 public class Variable {
     public void runVariable() {
-        primitive();
-        nonPrimitive();
+//        primitive();
+//        nonPrimitive();
+        variableScope();
     }
 
     private void primitive() {
@@ -62,5 +63,15 @@ public class Variable {
         System.out.println("ArrayList : " + arr);
         System.out.println("LinkedList : " + lst);
         System.out.println("********************");
+    }
+
+    private void variableScope(){
+        int globalVariable = 10;
+        {
+            int localVariable = 20;
+            System.out.println("LocalVariable = " + globalVariable);
+            System.out.println("ScopeVariable = " + localVariable);
+        }
+        System.out.println("LocalVariable = " + globalVariable);
     }
 }
