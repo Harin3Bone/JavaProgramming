@@ -8,9 +8,10 @@ public class Variable {
     public void runVariable() {
 //        primitive();
 //        variableScope();
-        casting();
-
+//        casting();
+//
 //        nonPrimitive();
+        knowString();
     }
 
     private void primitive() {
@@ -92,5 +93,40 @@ public class Variable {
         int narrowInt = (int) narrowDouble;
         System.out.println("NarrowLessBit : " + narrowInt);
         System.out.println("NarrowMoreBit : " + narrowDouble);
+        System.out.println("********************");
+    }
+
+    private void knowString(){
+        String str = "Hello";
+
+        char chrH = 'H';
+        char chrE = 'e';
+        char chrL = 'l';
+        char chrO = 'o';
+
+        System.out.println("String : " + str);
+        System.out.println("Char : " + chrH);
+        System.out.println("GroupOfChar : " + chrH + chrE + chrL + chrL + chrO);
+        System.out.println("---------");
+
+        String numA = "10";
+        String numB = "20";
+        String sumStringVariable = numA + numB;
+        String sumStringValue = numA + "30";
+        String sumStringInt = numA + 40;
+
+//        String cannot cast into int -> must be use Class property to help
+//        int sumStringIntV2 = (int) numA + 50;
+        int sumNewStringInt = Integer.parseInt(numA) + 50;
+        double sumNewStringDouble = Double.parseDouble(numA) + Double.parseDouble(numB);
+
+        System.out.println("NUM_A : " + numA);
+        System.out.println("NUM_B : " + numB);
+        System.out.println("String + String : " + sumStringVariable);
+        System.out.println("String + ValueString : " + sumStringValue);
+        System.out.println("String + Int : " + sumStringInt);
+        System.out.println("StringParseInt + Int : " + sumNewStringInt);
+        System.out.println("StringParseDouble + Double : " + sumNewStringDouble);
+        System.out.println("********************");
     }
 }
