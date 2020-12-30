@@ -1,4 +1,4 @@
-package main.Lesson1;
+package main.Beginning;
 
 public class Console {
     public void runSystemOut() {
