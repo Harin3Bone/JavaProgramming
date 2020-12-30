@@ -1,8 +1,13 @@
 package main.Beginning;
 
+import java.util.List;
+import java.util.ArrayList;
+import java.util.LinkedList;
+
 public class Variable {
     public void runVariable() {
         primitive();
+        nonPrimitive();
     }
 
     private void primitive() {
@@ -38,15 +43,24 @@ public class Variable {
         System.out.println("boolean : " + bool);
         System.out.println("---------");
         System.out.println("********************");
+    }
 
-//       TODO Each primitive data type it different size (bit)
-//        boolean = 8
-//        byte =8
-//        short =16
-//        int =32
-//        long =64
-//        float =32
-//        double =64
-//        char =16
+    private void nonPrimitive() {
+        String str = "String";
+
+        ArrayList<String> arr = new ArrayList<>();
+        arr.add("ArrayA");
+        arr.add("ArrayB");
+        arr.add("ArrayC");
+
+        List<String> lst = new LinkedList<>();
+        lst.add("ListA");
+        lst.add("ListB");
+        lst.add("ListC");
+
+        System.out.println("String : " + str);
+        System.out.println("ArrayList : " + arr);
+        System.out.println("LinkedList : " + lst);
+        System.out.println("********************");
     }
 }
