@@ -7,8 +7,10 @@ import java.util.LinkedList;
 public class Variable {
     public void runVariable() {
 //        primitive();
+//        variableScope();
+        casting();
+
 //        nonPrimitive();
-        variableScope();
     }
 
     private void primitive() {
@@ -65,7 +67,7 @@ public class Variable {
         System.out.println("********************");
     }
 
-    private void variableScope(){
+    private void variableScope() {
         int globalVariable = 10;
         {
             int localVariable = 20;
@@ -73,5 +75,22 @@ public class Variable {
             System.out.println("ScopeVariable = " + localVariable);
         }
         System.out.println("LocalVariable = " + globalVariable);
+    }
+
+    private void casting() {
+//        Widening Casting = convert primitive data type from less-bit into more-bit
+        int wideInt = 10;
+        @SuppressWarnings("wideDouble")
+        double wideDouble = wideInt;
+
+        System.out.println("WideLessBit : " + wideInt);
+        System.out.println("WideMoreBit : " + wideDouble);
+        System.out.println("---------");
+
+//        Narrowing Casting = convert primitive data type from more-bit into less-bit
+        double narrowDouble = 10.0;
+        int narrowInt = (int) narrowDouble;
+        System.out.println("NarrowLessBit : " + narrowInt);
+        System.out.println("NarrowMoreBit : " + narrowDouble);
     }
 }
