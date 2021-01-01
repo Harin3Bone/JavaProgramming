@@ -2,7 +2,8 @@ package main.Beginning;
 
 public class Operator {
     public void runOperator() {
-        mathOperator();
+//        mathOperator();
+        comparativeOperator();
     }
 
     private void mathOperator() {
@@ -25,6 +26,36 @@ public class Operator {
 //        Modular
         System.out.println("A % B = " + (a % b));
 
+        System.out.println("*******************");
+    }
+
+    private void comparativeOperator(){
+//        Compare of Operator => == , >= , <= , > , < , !=
+//        Can use with number only => short , int , long , float , double
+        double a = 10;
+        double b = 20;
+
+        System.out.println("A = " + a);
+        System.out.println("B = " + b);
+        System.out.println("-------------");
+
+        //noinspection ConstantConditions
+        System.out.println("A == B is " + (a==b));
+
+        //noinspection ConstantConditions
+        System.out.println("A > B is " + (a>b));
+
+        //noinspection ConstantConditions
+        System.out.println("A < B is " + (a<b));
+
+        //noinspection ConstantConditions
+        System.out.println("A >= B is " + (a>=b));
+
+        //noinspection ConstantConditions
+        System.out.println("A <= B is " + (a<=b));
+
+        //noinspection ConstantConditions
+        System.out.println("A != B is " + (a!=b));
         System.out.println("*******************");
     }
 }
