@@ -3,11 +3,13 @@ package main.Beginning;
 public class Operator {
     public void runOperator() {
 //        mathOperator();
-        comparativeOperator();
+//        comparativeOperator();
+        logicalOperator();
     }
 
     private void mathOperator() {
 //        Simple of Operator => + - * / %
+//        Can use with Number only => short , int , long , float , double
         double a = 10;
         double b = 20;
 
@@ -29,6 +31,7 @@ public class Operator {
         System.out.println("*******************");
     }
 
+    @SuppressWarnings("ConstantConditions")
     private void comparativeOperator() {
 //        Compare of Operator => == , != , >= , <= , > , <
 
@@ -44,23 +47,33 @@ public class Operator {
         System.out.println("B = " + b);
         System.out.println("-------------");
 
-        //noinspection ConstantConditions
         System.out.println("A == B is " + (a == b));
-
-        //noinspection ConstantConditions
         System.out.println("A > B is " + (a > b));
-
-        //noinspection ConstantConditions
         System.out.println("A < B is " + (a < b));
-
-        //noinspection ConstantConditions
         System.out.println("A >= B is " + (a >= b));
-
-        //noinspection ConstantConditions
         System.out.println("A <= B is " + (a <= b));
-
-        //noinspection ConstantConditions
         System.out.println("A != B is " + (a != b));
+
         System.out.println("*******************");
+    }
+
+    @SuppressWarnings("ConstantConditions")
+    private void logicalOperator(){
+//        && = AND
+//        || = OR
+//        ! = NOT
+
+        boolean a = true;
+        boolean b = false;
+
+//        true && true = true
+        System.out.println("A AND B = " + (a&&b));
+
+//        false || false = false
+        System.out.println("A OR B = " + (a||b));
+
+//        !true = false and !false = true
+        System.out.println("NOT A = " + (!a));
+        System.out.println("NOT B = " + (!b));
     }
 }
