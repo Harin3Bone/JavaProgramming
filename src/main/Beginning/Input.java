@@ -5,7 +5,8 @@ import java.util.Scanner;
 public class Input {
     public void runScanner() {
 //        inputString();
-        inputNumber();
+//        inputNumber();
+        dotNext();
     }
 
     private void inputString() {
@@ -18,7 +19,7 @@ public class Input {
         System.out.println("**************************");
     }
 
-    private void inputNumber(){
+    private void inputNumber() {
         Scanner sc = new Scanner(System.in);
 
         System.out.print("Please input some Short : ");
@@ -42,5 +43,23 @@ public class Input {
         System.out.println("Your Long = " + numLong);
         System.out.println("Your Float = " + numFloat);
         System.out.println("Your Double = " + numDouble);
+    }
+
+    private void dotNext() {
+        Scanner sc = new Scanner(System.in);
+
+//        Input "Hello World" => Expect "Hello World"
+        System.out.print("Input Data nextLine() : ");
+        String scNextLine = sc.nextLine();
+
+        System.out.println("------------");
+
+//        Input "Hello World" => Expect "Hello"
+        System.out.print("Input Data next() : ");
+        String scNext = sc.next();
+
+        System.out.println("NextLine : " + scNextLine);
+        System.out.println("Next : " + scNext);
+
     }
 }
