@@ -8,36 +8,25 @@ import main.beginning.Variable;
 
 public class JavaProgramming {
     public static void main(String[] args) {
-//        lesson1();
-//        lesson2();
-//        lesson3();
-//        lesson4();
-        assignment1();
+//        lesson();
+        assignment();
     }
 
-    private static void lesson1(){
-        Console console = new Console();
-        console.runSystemOut();
+    private static void lesson(){
+        Console lesson1 = new Console();
+        Variable lesson2 = new Variable();
+        Input lesson3 = new Input();
+        Operator lesson4 = new Operator();
+
+        lesson1.runSystemOut();
+        lesson2.runVariable();
+        lesson3.runScanner();
+        lesson4.runOperator();
     }
 
-    private static void lesson2(){
-        Variable variable = new Variable();
-        variable.runVariable();
-    }
-
-    private static void lesson3(){
-        Input input = new Input();
-        input.runScanner();
-    }
-
-    private static void lesson4(){
-        Operator operator = new Operator();
-        operator.runOperator();
-    }
-
-    private static void assignment1(){
-        BmiCalculator bmi = new BmiCalculator();
-        bmi.runBmiCalculator();
+    private static void assignment(){
+        BmiCalculator assignment1 = new BmiCalculator();
+        assignment1.runBmiCalculator();
     }
 
 }
