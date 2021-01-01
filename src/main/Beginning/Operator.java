@@ -2,18 +2,32 @@ package main.Beginning;
 
 public class Operator {
     public void runOperator() {
-//        mathOperator();
-//        comparativeOperator();
-//        logicalOperator();
-//        incrementAndDecrement();
+//        Operator Hierarchy
+        /*
+        * 1. ()
+        * 2. ++ , --
+        * 3. * , / , %
+        * 4. + , -
+        * 5. < , <= , > , >=
+        * 6. == , !=
+        * 7. &&
+        * 8. ||
+        * 9. = , != , -= , *= , /= , %=
+        * until 2 - 9 hierarchy order -> LEFT to RIGHT
+        * */
+
+        mathOperator();
+        comparativeOperator();
+        logicalOperator();
+        incrementAndDecrement();
         compoundAssignment();
     }
 
     private void mathOperator() {
 //        Simple of Operator => + - * / %
 //        Can use with Number only => short , int , long , float , double
-        double a = 10;
-        double b = 20;
+        float a = 10;
+        float b = 20;
 
 //        Plus
         System.out.println("A + B = " + (a + b));
@@ -42,8 +56,8 @@ public class Operator {
 
 //        Type A = Can use with String or Number
 //        Type B = Can use with Number only => short , int , long , float , double
-        double a = 10;
-        double b = 20;
+        float a = 10;
+        float b = 20;
 
         System.out.println("A = " + a);
         System.out.println("B = " + b);
@@ -103,8 +117,8 @@ public class Operator {
 
     private void compoundAssignment(){
 //        Can use with Number only => short , int , long , float , double
-        double a = 10;
-        double b = 5;
+        float a = 10;
+        float b = 5;
 
         System.out.println("A = " + a);
         System.out.println("B = " + b);
