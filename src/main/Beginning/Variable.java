@@ -6,12 +6,12 @@ import java.util.LinkedList;
 
 public class Variable {
     public void runVariable() {
-//        primitive();
-//        variableScope();
-//        casting();
-//
-//        nonPrimitive();
-//        knowString();
+        primitive();
+        variableScope();
+        casting();
+
+        nonPrimitive();
+        knowString();
         checkDataType();
     }
 
