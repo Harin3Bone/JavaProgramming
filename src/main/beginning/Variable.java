@@ -1,4 +1,4 @@
-package main.Beginning;
+package main.beginning;
 
 import java.util.List;
 import java.util.ArrayList;

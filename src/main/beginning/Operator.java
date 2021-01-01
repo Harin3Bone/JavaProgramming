@@ -1,4 +1,4 @@
-package main.Beginning;
+package main.beginning;
 
 public class Operator {
     public void runOperator() {

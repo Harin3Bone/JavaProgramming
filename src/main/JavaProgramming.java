@@ -1,16 +1,18 @@
 package main;
 
-import main.Beginning.Console;
-import main.Beginning.Input;
-import main.Beginning.Operator;
-import main.Beginning.Variable;
+import main.assignment.BmiCalculator;
+import main.beginning.Console;
+import main.beginning.Input;
+import main.beginning.Operator;
+import main.beginning.Variable;
 
 public class JavaProgramming {
     public static void main(String[] args) {
 //        lesson1();
 //        lesson2();
 //        lesson3();
-        lesson4();
+//        lesson4();
+        assignment1();
     }
 
     private static void lesson1(){
@@ -31,6 +33,11 @@ public class JavaProgramming {
     private static void lesson4(){
         Operator operator = new Operator();
         operator.runOperator();
+    }
+
+    private static void assignment1(){
+        BmiCalculator bmi = new BmiCalculator();
+        bmi.runBmiCalculator();
     }
 
 }
