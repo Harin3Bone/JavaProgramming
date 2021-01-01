@@ -8,11 +8,8 @@ public class Console {
 //      Print console with next line
         systemOutPrintln();
 
-//      \n = Next line
-        backSlashN();
-
-//      \t = Tab
-        backSlashT();
+//      Escape Character
+        escapeCharacter();
     }
 
     private void systemOutPrint() {
@@ -29,12 +26,10 @@ public class Console {
         System.out.println("*********************");
     }
 
-    private void backSlashN() {
+    private void escapeCharacter() {
         System.out.println("Use BackSlash N :\n A \n B");
-        System.out.println("*********************");
-    }
+        System.out.println("------------");
 
-    private void backSlashT() {
         System.out.println("Use BackSlash T :\n A \t B");
     }
 }

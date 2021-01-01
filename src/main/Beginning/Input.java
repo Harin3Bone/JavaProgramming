@@ -43,6 +43,8 @@ public class Input {
         System.out.println("Your Long = " + numLong);
         System.out.println("Your Float = " + numFloat);
         System.out.println("Your Double = " + numDouble);
+
+        System.out.println("**************************");
     }
 
     private void dotNext() {
@@ -60,6 +62,8 @@ public class Input {
 
         System.out.println("NextLine : " + scNextLine);
         System.out.println("Next : " + scNext);
+
+        System.out.println("**************************");
 
     }
 }
