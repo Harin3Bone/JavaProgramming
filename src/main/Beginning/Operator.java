@@ -29,9 +29,14 @@ public class Operator {
         System.out.println("*******************");
     }
 
-    private void comparativeOperator(){
-//        Compare of Operator => == , >= , <= , > , < , !=
-//        Can use with number only => short , int , long , float , double
+    private void comparativeOperator() {
+//        Compare of Operator => == , != , >= , <= , > , <
+
+//        Type A : == , !=
+//        Type B : >= , <= , > , <
+
+//        Type A = Can use with String or Number
+//        Type B = Can use with Number only => short , int , long , float , double
         double a = 10;
         double b = 20;
 
@@ -40,22 +45,22 @@ public class Operator {
         System.out.println("-------------");
 
         //noinspection ConstantConditions
-        System.out.println("A == B is " + (a==b));
+        System.out.println("A == B is " + (a == b));
 
         //noinspection ConstantConditions
-        System.out.println("A > B is " + (a>b));
+        System.out.println("A > B is " + (a > b));
 
         //noinspection ConstantConditions
-        System.out.println("A < B is " + (a<b));
+        System.out.println("A < B is " + (a < b));
 
         //noinspection ConstantConditions
-        System.out.println("A >= B is " + (a>=b));
+        System.out.println("A >= B is " + (a >= b));
 
         //noinspection ConstantConditions
-        System.out.println("A <= B is " + (a<=b));
+        System.out.println("A <= B is " + (a <= b));
 
         //noinspection ConstantConditions
-        System.out.println("A != B is " + (a!=b));
+        System.out.println("A != B is " + (a != b));
         System.out.println("*******************");
     }
 }
