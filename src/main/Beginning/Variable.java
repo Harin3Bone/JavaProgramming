@@ -11,7 +11,8 @@ public class Variable {
 //        casting();
 //
 //        nonPrimitive();
-        knowString();
+//        knowString();
+        checkDataType();
     }
 
     private void primitive() {
@@ -128,5 +129,28 @@ public class Variable {
         System.out.println("StringParseInt + Int : " + sumNewStringInt);
         System.out.println("StringParseDouble + Double : " + sumNewStringDouble);
         System.out.println("********************");
+    }
+
+    private void checkDataType(){
+        String str = "String";
+//        Character chr = 'C';
+        Integer num = 10;
+//        Float flt = 10F;
+//        Double dob = 10.0;
+
+        //noinspection ConstantConditions
+        boolean strBool = str instanceof String;
+
+        //noinspection ConstantConditions
+        boolean intBool = num instanceof Integer;
+
+        //noinspection ConstantConditions
+        System.out.println("Str is String = " + strBool);
+        System.out.println("Str is = " + str.getClass());
+
+        System.out.println("---------");
+        //noinspection ConstantConditions
+        System.out.println("Str is String = " + intBool);
+        System.out.println("Str is = " + num.getClass());
     }
 }
