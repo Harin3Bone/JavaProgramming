@@ -5,7 +5,8 @@ public class Operator {
 //        mathOperator();
 //        comparativeOperator();
 //        logicalOperator();
-        incrementAndDecrement();
+//        incrementAndDecrement();
+        compoundAssignment();
     }
 
     private void mathOperator() {
@@ -98,6 +99,22 @@ public class Operator {
         System.out.println("A-- = " + d);
         System.out.println("--A = " + e);
         System.out.println("*******************");
+    }
 
+    private void compoundAssignment(){
+//        Can use with Number only => short , int , long , float , double
+        double a = 10;
+        double b = 5;
+
+        System.out.println("A = " + a);
+        System.out.println("B = " + b);
+        System.out.println("----------");
+        System.out.println("A += B => A = A + B : " + (a += b));
+        System.out.println("A -= B => A = A - B : " + (a -= b));
+        System.out.println("A *= B => A = A * B : " + (a *= b));
+        System.out.println("A /= B => A = A / B : " + (a /= b));
+        //noinspection UnusedAssignment
+        System.out.println("A /= B => A = A % B : " + (a %= b));
+        System.out.println("*******************");
     }
 }
