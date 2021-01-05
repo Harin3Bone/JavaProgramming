@@ -4,7 +4,8 @@ import java.util.Scanner;
 
 public class Condition {
     public void runCondition() {
-        ifStatement();
+//        ifStatement();
+        ifElseStatement();
     }
 
     private void ifStatement() {
@@ -18,5 +19,21 @@ public class Condition {
         if (x < y) {
             System.out.println("X is less than Y");
         }
+    }
+
+    private void ifElseStatement(){
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Input number : ");
+        int value = sc.nextInt();
+
+        int init = 50;
+
+        if (value > init) {
+            System.out.println("Value more than Initial");
+        } else {
+            System.out.println("Value less than Initial");
+        }
+
     }
 }
