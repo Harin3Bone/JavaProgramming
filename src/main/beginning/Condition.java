@@ -7,7 +7,8 @@ public class Condition {
 //        ifStatement();
 //        ifElseStatement();
 //        ifMoreThanOne();
-        avoidIfMoreThanOne();
+//        avoidIfMoreThanOne();
+        ternaryOperator();
     }
 
     private void ifStatement() {
@@ -72,6 +73,15 @@ public class Condition {
         } else {
             System.out.println("Your number > 30");
         }
+    }
 
+    private void ternaryOperator() {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Input number : ");
+        int number = sc.nextInt();
+
+        String message = number < 50 ? "Less than 50" : "More than 50";
+        System.out.println("Your number is " + message);
     }
 }
