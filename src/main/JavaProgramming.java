@@ -1,12 +1,13 @@
 package main;
 
 import main.assignment.BmiCalculator;
+import main.assignment.OddOrEven;
 import main.beginning.*;
 
 public class JavaProgramming {
     public static void main(String[] args) {
-        lesson();
-//        assignment();
+//        lesson();
+        assignment();
     }
 
     private static void lesson() {
@@ -22,13 +23,16 @@ public class JavaProgramming {
 //        Operator lesson4 = new Operator();
 //        lesson4.runOperator();
 
-        Condition lesson5 = new Condition();
-        lesson5.runCondition();
+//        Condition lesson5 = new Condition();
+//        lesson5.runCondition();
     }
 
     private static void assignment() {
-        BmiCalculator assignment1 = new BmiCalculator();
-        assignment1.runBmiCalculator();
+//        BmiCalculator assignment1 = new BmiCalculator();
+//        assignment1.runBmiCalculator();
+
+        OddOrEven assignment2 = new OddOrEven();
+        assignment2.runOddOrEven();
     }
 
 }
