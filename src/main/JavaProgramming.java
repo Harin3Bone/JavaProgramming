@@ -23,9 +23,12 @@ public class JavaProgramming {
 //
 //        Operator lesson4 = new Operator();
 //        lesson4.runOperator();
+//
+//        Condition lesson5 = new Condition();
+//        lesson5.runCondition();
 
-        Condition lesson5 = new Condition();
-        lesson5.runCondition();
+        Loop lesson6 = new Loop();
+        lesson6.runLoop();
     }
 
     private static void assignment() {

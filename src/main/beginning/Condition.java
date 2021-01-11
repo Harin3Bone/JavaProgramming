@@ -4,11 +4,11 @@ import java.util.Scanner;
 
 public class Condition {
     public void runCondition() {
-//        ifStatement();
-//        ifElseStatement();
-//        ifMoreThanOne();
-//        avoidIfMoreThanOne();
-//        ternaryOperator();
+        ifStatement();
+        ifElseStatement();
+        ifMoreThanOne();
+        avoidIfMoreThanOne();
+        ternaryOperator();
         switchCaseStatement();
     }
 
