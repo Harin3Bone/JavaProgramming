@@ -5,14 +5,16 @@ public class Loop {
 //        whileLoop();
 //        whileWithBreak();
 //        whileWithContinue();
-
+//
 //        forLoop();
 //        forWithBreak();
 //        forWithContinue();
+//
+//        forLoopDecrement();
+//        forLoopDecrementBreak();
+//        forLoopDecrementContinue();
 
-        forLoopDecrement();
-        forLoopDecrementBreak();
-        forLoopDecrementContinue();
+        doWhileLoop();
     }
 
     private void whileLoop() {
@@ -73,13 +75,13 @@ public class Loop {
         }
     }
 
-    private void forLoopDecrement(){
+    private void forLoopDecrement() {
         for (int x = 10; x > 0; x--) {
             System.out.println("forLoopDecrement - " + x);
         }
     }
 
-    private void forLoopDecrementBreak(){
+    private void forLoopDecrementBreak() {
         for (int x = 10; x > 0; x--) {
             System.out.println("forLoopDecrementBreak - " + x);
             if (x < 5) {
@@ -88,12 +90,28 @@ public class Loop {
         }
     }
 
-    private void forLoopDecrementContinue(){
+    private void forLoopDecrementContinue() {
         for (int x = 10; x > 0; x--) {
-            if (x == 4){
+            if (x == 4) {
                 continue;
             }
             System.out.println("forLoopDecrementContinue - " + x);
         }
+    }
+
+    private void doWhileLoop() {
+        int x = 3;
+
+        //noinspection ConstantConditions,LoopConditionNotUpdatedInsideLoop,SingleStatementInBlock
+        do {
+            System.out.println("Different While & Do...While => " + x);
+        } while (x > 3);
+
+        System.out.println("----------------------");
+
+        do {
+            System.out.println("Number = " + x);
+            x++;
+        } while (x <= 7);
     }
 }
