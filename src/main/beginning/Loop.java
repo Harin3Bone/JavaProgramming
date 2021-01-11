@@ -6,9 +6,13 @@ public class Loop {
 //        whileWithBreak();
 //        whileWithContinue();
 
-        forLoop();
-        forWithBreak();
-        forWithContinue();
+//        forLoop();
+//        forWithBreak();
+//        forWithContinue();
+
+        forLoopDecrement();
+        forLoopDecrementBreak();
+        forLoopDecrementContinue();
     }
 
     private void whileLoop() {
@@ -53,7 +57,7 @@ public class Loop {
 
     private void forWithBreak() {
         for (int x = 0; x <= 10; x++) {
-            System.out.println("ForLoop - " + x);
+            System.out.println("forWithBreak - " + x);
             if (x == 7) {
                 break;
             }
@@ -65,7 +69,31 @@ public class Loop {
             if (x == 7) {
                 continue;
             }
-            System.out.println("ForLoop - " + x);
+            System.out.println("forWithContinue - " + x);
+        }
+    }
+
+    private void forLoopDecrement(){
+        for (int x = 10; x > 0; x--) {
+            System.out.println("forLoopDecrement - " + x);
+        }
+    }
+
+    private void forLoopDecrementBreak(){
+        for (int x = 10; x > 0; x--) {
+            System.out.println("forLoopDecrementBreak - " + x);
+            if (x < 5) {
+                break;
+            }
+        }
+    }
+
+    private void forLoopDecrementContinue(){
+        for (int x = 10; x > 0; x--) {
+            if (x == 4){
+                continue;
+            }
+            System.out.println("forLoopDecrementContinue - " + x);
         }
     }
 }
