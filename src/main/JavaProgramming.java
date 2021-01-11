@@ -7,8 +7,8 @@ import main.beginning.*;
 
 public class JavaProgramming {
     public static void main(String[] args) {
-//        lesson();
-        assignment();
+        lesson();
+//        assignment();
     }
 
     private static void lesson() {

@@ -8,7 +8,8 @@ public class Condition {
 //        ifElseStatement();
 //        ifMoreThanOne();
 //        avoidIfMoreThanOne();
-        ternaryOperator();
+//        ternaryOperator();
+        switchCaseStatement();
     }
 
     private void ifStatement() {
@@ -83,5 +84,54 @@ public class Condition {
 
         String message = number < 50 ? "Less than 50" : "More than 50";
         System.out.println("Your number is " + message);
+    }
+
+    private void switchCaseStatement() {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Input number of month (1-12) : ");
+        int month = sc.nextInt();
+
+        switch (month) {
+            case 1:
+                System.out.println("JANUARY");
+                break;
+            case 2:
+                System.out.println("FEBRUARY");
+                break;
+            case 3:
+                System.out.println("MARCH");
+                break;
+            case 4:
+                System.out.println("APRIL");
+                break;
+            case 5:
+                System.out.println("MAY");
+                break;
+            case 6:
+                System.out.println("JUNE");
+                break;
+            case 7:
+                System.out.println("JULY");
+                break;
+            case 8:
+                System.out.println("AUGUST");
+                break;
+            case 9:
+                System.out.println("SEPTEMBER");
+                break;
+            case 10:
+                System.out.println("OCTOBER");
+                break;
+            case 11:
+                System.out.println("NOVEMBER");
+                break;
+            case 12:
+                System.out.println("DECEMBER");
+                break;
+            default:
+                System.out.println("N/A");
+                break;
+        }
     }
 }
