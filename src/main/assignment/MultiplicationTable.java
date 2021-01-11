@@ -1,10 +1,22 @@
 package main.assignment;
 
+import java.util.Scanner;
+
 public class MultiplicationTable {
     public void runMultiplicationTable(){
         System.out.println("======================= START =======================");
-        for (int num = 2 ; num <= 12 ; num++){
-            for (int mul = 1 ; mul <= 12 ; mul++){
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Please input your multiplication number from = ");
+        int fromNum = sc.nextInt();
+        System.out.print("Please input your multiplication number to = ");
+        int toNum = sc.nextInt();
+        System.out.print("Please input your multiplication multiply from = ");
+        int fromMul = sc.nextInt();
+        System.out.print("Please input your multiplication multiply to = ");
+        int toMul = sc.nextInt();
+
+        for (int num = fromNum ; num <= toNum ; num++){
+            for (int mul = fromMul ; mul <= toMul ; mul++){
                 System.out.println(num + " x " + mul + " = " + num*mul);
             }
             if (num != 12) {
