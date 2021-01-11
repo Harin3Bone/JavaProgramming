@@ -2,30 +2,31 @@ package main;
 
 import main.assignment.BanknoteAmount;
 import main.assignment.BmiCalculator;
+import main.assignment.MultiplicationTable;
 import main.assignment.OddOrEven;
 import main.beginning.*;
 
 public class JavaProgramming {
     public static void main(String[] args) {
-        lesson();
-//        assignment();
+//        lesson();
+        assignment();
     }
 
     private static void lesson() {
-//        Console lesson1 = new Console();
-//        lesson1.runSystemOut();
-//
-//        Variable lesson2 = new Variable();
-//        lesson2.runVariable();
-//
-//        Input lesson3 = new Input();
-//        lesson3.runScanner();
-//
-//        Operator lesson4 = new Operator();
-//        lesson4.runOperator();
-//
-//        Condition lesson5 = new Condition();
-//        lesson5.runCondition();
+        Console lesson1 = new Console();
+        lesson1.runSystemOut();
+
+        Variable lesson2 = new Variable();
+        lesson2.runVariable();
+
+        Input lesson3 = new Input();
+        lesson3.runScanner();
+
+        Operator lesson4 = new Operator();
+        lesson4.runOperator();
+
+        Condition lesson5 = new Condition();
+        lesson5.runCondition();
 
         Loop lesson6 = new Loop();
         lesson6.runLoop();
@@ -38,8 +39,11 @@ public class JavaProgramming {
 //        OddOrEven assignment2 = new OddOrEven();
 //        assignment2.runOddOrEven();
 
-        BanknoteAmount assignment3 = new BanknoteAmount();
-        assignment3.runBankNoteAmount();
+//        BanknoteAmount assignment3 = new BanknoteAmount();
+//        assignment3.runBankNoteAmount();
+
+        MultiplicationTable assignment4 = new MultiplicationTable();
+        assignment4.runMultiplicationTable();
     }
 
 }
