@@ -2,19 +2,21 @@ package main.beginning;
 
 public class Loop {
     public void runLoop() {
-//        whileLoop();
-//        whileWithBreak();
-//        whileWithContinue();
-//
-//        forLoop();
-//        forWithBreak();
-//        forWithContinue();
-//
-//        forLoopDecrement();
-//        forLoopDecrementBreak();
-//        forLoopDecrementContinue();
+        whileLoop();
+        whileWithBreak();
+        whileWithContinue();
+
+        forLoop();
+        forWithBreak();
+        forWithContinue();
+
+        forLoopDecrement();
+        forLoopDecrementBreak();
+        forLoopDecrementContinue();
 
         doWhileLoop();
+        loopInLoopWithFor();
+        loopInLoopWithWhile();
     }
 
     private void whileLoop() {
@@ -113,5 +115,31 @@ public class Loop {
             System.out.println("Number = " + x);
             x++;
         } while (x <= 7);
+    }
+
+    private void loopInLoopWithFor() {
+        for (int x = 0; x <= 3; x++) {
+            System.out.println("FOR Outside Loop - " + x);
+            for (int y = 0; y <= 5; y++) {
+                System.out.println("FOR Inside Loop - " + y);
+            }
+            System.out.println("----------------------");
+        }
+    }
+
+    private void loopInLoopWithWhile(){
+        int i = 0;
+        int j;
+
+        while (i<=3){
+            System.out.println("WHILE Outside Loop - " + i);
+            j = 1;
+            while (j <= 5){
+                System.out.println("WHILE Inside Loop - " + j);
+                j++;
+            }
+            System.out.println("----------------------");
+            i++;
+        }
     }
 }
