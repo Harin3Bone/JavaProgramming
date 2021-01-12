@@ -1,9 +1,6 @@
 package main;
 
-import main.assignment.BanknoteAmount;
-import main.assignment.BmiCalculator;
-import main.assignment.MultiplicationTable;
-import main.assignment.OddOrEven;
+import main.assignment.*;
 import main.beginning.*;
 
 public class JavaProgramming {
@@ -35,15 +32,18 @@ public class JavaProgramming {
     private static void assignment() {
 //        BmiCalculator assignment1 = new BmiCalculator();
 //        assignment1.runBmiCalculator();
-
+//
 //        OddOrEven assignment2 = new OddOrEven();
 //        assignment2.runOddOrEven();
-
+//
 //        BanknoteAmount assignment3 = new BanknoteAmount();
 //        assignment3.runBankNoteAmount();
+//
+//        MultiplicationTable assignment4 = new MultiplicationTable();
+//        assignment4.runMultiplicationTable();
 
-        MultiplicationTable assignment4 = new MultiplicationTable();
-        assignment4.runMultiplicationTable();
+        SumNumber assignment5 = new SumNumber();
+        assignment5.runSumNumber();
     }
 
 }
