@@ -1,6 +1,6 @@
 package main;
 
-import main.assignment.*;
+import main.assignment.MaxMinNumber;
 import main.beginning.*;
 
 public class JavaProgramming {
@@ -41,9 +41,12 @@ public class JavaProgramming {
 //
 //        MultiplicationTable assignment4 = new MultiplicationTable();
 //        assignment4.runMultiplicationTable();
+//
+//        SumNumber assignment5 = new SumNumber();
+//        assignment5.runSumNumber();
 
-        SumNumber assignment5 = new SumNumber();
-        assignment5.runSumNumber();
+        MaxMinNumber assignment6 = new MaxMinNumber();
+        assignment6.runMaxMinNumber();
     }
 
 }
