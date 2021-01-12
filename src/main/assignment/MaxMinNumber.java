@@ -6,7 +6,7 @@ public class MaxMinNumber {
     public void runMaxMinNumber() {
         Scanner sc = new Scanner(System.in);
         double maxNum = 0;
-        double minNum = 0;
+        double minNum = Double.MAX_VALUE;
 
         System.out.println("============= MIN-MAX =============");
         System.out.println("P.S. Press minus number for exit.");
@@ -24,10 +24,6 @@ public class MaxMinNumber {
             if (num > maxNum) {
                 maxNum = num;
             } else {
-                minNum = num;
-            }
-
-            if (minNum == 0) {
                 minNum = num;
             }
         }
