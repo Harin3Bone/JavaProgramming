@@ -4,23 +4,24 @@ public class Operator {
     public void runOperator() {
 //        Operator Hierarchy
         /*
-        * 1. ()
-        * 2. ++ , --
-        * 3. * , / , %
-        * 4. + , -
-        * 5. < , <= , > , >=
-        * 6. == , !=
-        * 7. &&
-        * 8. ||
-        * 9. = , != , -= , *= , /= , %=
-        * until 2 - 9 hierarchy order -> LEFT to RIGHT
-        * */
+         * 1. ()
+         * 2. ++ , --
+         * 3. * , / , %
+         * 4. + , -
+         * 5. < , <= , > , >=
+         * 6. == , !=
+         * 7. &&
+         * 8. ||
+         * 9. = , != , -= , *= , /= , %=
+         * until 2 - 9 hierarchy order -> LEFT to RIGHT
+         * */
 
         mathOperator();
         comparativeOperator();
         logicalOperator();
         incrementAndDecrement();
         compoundAssignment();
+        operatorPrecedence();
     }
 
     private void mathOperator() {
@@ -115,8 +116,9 @@ public class Operator {
         System.out.println("*******************");
     }
 
-    private void compoundAssignment(){
+    private void compoundAssignment() {
 //        Can use with Number only => short , int , long , float , double
+        System.out.println("Compound Assignment or Abbreviating Operator");
         float a = 10;
         float b = 5;
 
@@ -131,4 +133,18 @@ public class Operator {
         System.out.println("A /= B => A = A % B : " + (a %= b));
         System.out.println("*******************");
     }
+
+    private void operatorPrecedence() {
+        int resA = 1 + 2 - 3 * 4 / 5;
+
+        @SuppressWarnings("PointlessArithmeticExpression")
+        int resB = 1 + 2 - 3 * (4 / 5);
+
+        boolean boolA = true;
+        boolean boolB = false;
+
+        System.out.println("Calculate number without () = " + resA);
+        System.out.println("Calculate number with () = " + resB);
+    }
+
 }
