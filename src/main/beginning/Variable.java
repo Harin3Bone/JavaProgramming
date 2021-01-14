@@ -9,10 +9,11 @@ public class Variable {
         primitive();
         variableScope();
         casting();
-
         nonPrimitive();
         knowString();
         checkDataType();
+        tipForNumber();
+        tipForPrecisionPoint();
     }
 
     private void primitive() {
@@ -97,7 +98,7 @@ public class Variable {
         System.out.println("********************");
     }
 
-    private void knowString(){
+    private void knowString() {
         String str = "Hello";
 
         char chrH = 'H';
@@ -131,7 +132,7 @@ public class Variable {
         System.out.println("********************");
     }
 
-    private void checkDataType(){
+    private void checkDataType() {
         String str = "String";
 //        Character chr = 'C';
         Integer num = 10;
@@ -152,5 +153,20 @@ public class Variable {
         //noinspection ConstantConditions
         System.out.println("Str is String = " + intBool);
         System.out.println("Str is = " + num.getClass());
+    }
+
+    private void tipForNumber() {
+        int x = 1000000;
+        int y = 1_000_000;
+        System.out.println("X = " + x);
+        System.out.println("Y = " + y);
+    }
+
+    private void tipForPrecisionPoint() {
+        float x = 1f;
+
+        System.out.println("NORMAL FLOAT = " + x);
+        System.out.format("2 DIGIT FLOAT = %.2f", x);
+        System.out.println("\n5 DIGIT FLOAT = " + String.format("%.5f", x));
     }
 }
