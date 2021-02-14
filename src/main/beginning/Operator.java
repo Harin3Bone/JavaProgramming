@@ -134,12 +134,7 @@ public class Operator {
 
     private void operatorPrecedence() {
         int resA = 1 + 2 - 3 * 4 / 5;
-
-        @SuppressWarnings("PointlessArithmeticExpression")
         int resB = 1 + 2 - 3 * (4 / 5);
-
-        boolean boolA = true;
-        boolean boolB = false;
 
         System.out.println("Calculate number without () = " + resA);
         System.out.println("Calculate number with () = " + resB);
