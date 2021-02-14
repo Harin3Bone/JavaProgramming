@@ -82,7 +82,6 @@ public class Variable {
     private void casting() {
 //        Widening Casting = convert primitive data type from less-bit into more-bit
         int wideInt = 10;
-        @SuppressWarnings("wideDouble")
         double wideDouble = wideInt;
 
         System.out.println("WideLessBit : " + wideInt);

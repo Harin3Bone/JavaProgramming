@@ -13,7 +13,8 @@ public class Condition {
     }
 
     private void ifStatement() {
-        Scanner sc = new Scanner(System.in);
+        @SuppressWarnings("resource")
+		Scanner sc = new Scanner(System.in);
 
         System.out.print("Input x (number) : ");
         int x = sc.nextInt();
@@ -26,7 +27,8 @@ public class Condition {
     }
 
     private void ifElseStatement() {
-        Scanner sc = new Scanner(System.in);
+        @SuppressWarnings("resource")
+		Scanner sc = new Scanner(System.in);
 
         System.out.print("Input number : ");
         int value = sc.nextInt();
@@ -41,7 +43,8 @@ public class Condition {
     }
 
     private void ifMoreThanOne() {
-        Scanner sc = new Scanner(System.in);
+        @SuppressWarnings("resource")
+		Scanner sc = new Scanner(System.in);
 
         System.out.print("Input number : ");
         int number = sc.nextInt();
@@ -60,7 +63,8 @@ public class Condition {
     }
 
     private void avoidIfMoreThanOne() {
-        Scanner sc = new Scanner(System.in);
+        @SuppressWarnings("resource")
+		Scanner sc = new Scanner(System.in);
 
         System.out.print("Input number : ");
         int number = sc.nextInt();
@@ -77,7 +81,8 @@ public class Condition {
     }
 
     private void ternaryOperator() {
-        Scanner sc = new Scanner(System.in);
+        @SuppressWarnings("resource")
+		Scanner sc = new Scanner(System.in);
 
         System.out.print("Input number : ");
         int number = sc.nextInt();
@@ -87,7 +92,8 @@ public class Condition {
     }
 
     private void switchCaseStatement() {
-        Scanner sc = new Scanner(System.in);
+        @SuppressWarnings("resource")
+		Scanner sc = new Scanner(System.in);
 
         System.out.print("Input number of month (1-12) : ");
         int month = sc.nextInt();

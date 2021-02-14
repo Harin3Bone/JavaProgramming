@@ -5,7 +5,8 @@ import java.util.Scanner;
 public class MultiplicationTable {
     public void runMultiplicationTable(){
         System.out.println("======================= START =======================");
-        Scanner sc = new Scanner(System.in);
+        @SuppressWarnings("resource")
+		Scanner sc = new Scanner(System.in);
         System.out.print("Please input your multiplication number from = ");
         int fromNum = sc.nextInt();
         System.out.print("Please input your multiplication number to = ");
