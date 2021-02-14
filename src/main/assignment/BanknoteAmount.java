@@ -7,7 +7,8 @@ public class BanknoteAmount {
         System.out.println("Banknote Amount");
         System.out.println("-------------------------");
 
-        Scanner sc = new Scanner(System.in);
+        @SuppressWarnings("resource")
+		Scanner sc = new Scanner(System.in);
         System.out.print("Please input your money : ");
         int get = sc.nextInt();
         int count = 0;

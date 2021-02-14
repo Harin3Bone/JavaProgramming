@@ -4,13 +4,14 @@ import java.util.Scanner;
 
 public class Input {
     public void runScanner() {
-//        inputString();
-//        inputNumber();
+        inputString();
+        inputNumber();
         dotNext();
     }
 
     private void inputString() {
-        Scanner sc = new Scanner(System.in);
+        @SuppressWarnings("resource")
+		Scanner sc = new Scanner(System.in);
 
         System.out.print("Please input some string : ");
         String str = sc.nextLine();
@@ -20,7 +21,8 @@ public class Input {
     }
 
     private void inputNumber() {
-        Scanner sc = new Scanner(System.in);
+        @SuppressWarnings("resource")
+		Scanner sc = new Scanner(System.in);
 
         System.out.print("Please input some Short : ");
         short numShort = sc.nextShort();
@@ -48,7 +50,8 @@ public class Input {
     }
 
     private void dotNext() {
-        Scanner sc = new Scanner(System.in);
+        @SuppressWarnings("resource")
+		Scanner sc = new Scanner(System.in);
 
 //        Input "Hello World" => Expect "Hello World"
         System.out.print("Input Data nextLine() : ");

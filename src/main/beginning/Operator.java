@@ -48,7 +48,6 @@ public class Operator {
         System.out.println("*******************");
     }
 
-    @SuppressWarnings("ConstantConditions")
     private void comparativeOperator() {
 //        Compare of Operator => == , != , >= , <= , > , <
 
@@ -74,7 +73,6 @@ public class Operator {
         System.out.println("*******************");
     }
 
-    @SuppressWarnings("ConstantConditions")
     private void logicalOperator() {
 //        && = AND , || = OR , ! = NOT
         boolean a = true;
