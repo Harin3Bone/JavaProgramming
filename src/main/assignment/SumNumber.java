@@ -9,7 +9,8 @@ public class SumNumber {
     }
 
     private void sumSolutionOne(){
-        Scanner sc = new Scanner(System.in);
+        @SuppressWarnings("resource")
+		Scanner sc = new Scanner(System.in);
         double sum = 0;
         System.out.println("================ SUM NUMBER ================");
 
@@ -28,7 +29,8 @@ public class SumNumber {
     }
 
     public void sumSolutionTwo(){
-        Scanner sc = new Scanner(System.in);
+        @SuppressWarnings("resource")
+		Scanner sc = new Scanner(System.in);
         double sum = 0;
         System.out.println("================ SUM NUMBER ================");
 
